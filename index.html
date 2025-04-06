@@ -1,19 +1,108 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Comida china cantonesa para servir y llevar">
-    <meta name="keywords" content="Restaurant Hai San, Carta Hai san, Carta Haisan, Restaurant Haisan, Comida china, San Antonio, Llo lleo">
-    <link rel="icon" href="./favicon.ico" sizes="32x32">
-    <title>Restaurant Hai San</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carta Restaurant Hai San</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f8f8f8;
+      font-family: sans-serif;
+    }
+
+    .menu-container {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      padding: 10px 0;
+      align-items: center;
+  background-color: #2e2e2e;
+    }
+
+    .whatsapp-button {
+    text-decoration: none;
+    color: white;
+    background-color: #26e06a;
+    padding: 25px 30px;
+    border-radius: 20px;
+    font-weight: bold;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: fixed;
+    width: 65%;
+    text-align: center;
+    bottom: max(env(safe-area-inset-bottom), 20px);
+    max-height: 40px;
+    max-width: 400px;
+    transition: all 0.5s ease-in-out;
+    }
+
+    .whatsapp-button > span {
+    font-size: 1rem;
+    }
+
+    .menu-container > img{
+  width: 100%;
+  height: auto;
+  -webkit-box-shadow: 0px 5px 16px 21px rgba(36,36,36,0.58);
+-moz-box-shadow: 0px 5px 16px 21px rgba(36,36,36,0.58);
+box-shadow: 0px 5px 16px 21px rgba(36,36,36,0.58);
+  border-radius: 0;
+  object-fit: contain;
+}
+
+/* En pantallas grandes (como desktop), ocupan todo el alto */
+@media (min-width: 500px) {
+  .menu-container img {
+    height: 100vh;
+    width: auto;
+  }
+
+  .whatsapp-button {
+    width: 250px;
+    padding: 30px 30px;
+    border-radius: 30px
+    }
+
+    .whatsapp-button:hover {
+    scale: 1.05;
+    }
+    
+    .whatsapp-button > span {
+    font-size: 1.2rem;
+    }
+
+
+}
+
+  </style>
 </head>
-<style>
-    * {padding: 0; margin: 0;}
-</style>
 <body>
-    <div>
-        <iframe src="https://drive.google.com/viewerng/viewer?url=https://drive.google.com/uc?id=1622Ifvxxdv9G-ADo2MqHPtDTjf2Ylggc&embedded=true" frameborder="0" id="myiframe" style="height:100vh; width:100vw;"></iframe>
-    </div>
+  <div class="menu-container">
+    <img src="resources/1.png" alt="Carta página 1" loading="lazy">
+    <img src="resources/2.png" alt="Carta página 2" loading="lazy">
+    <img src="resources/3.png" alt="Carta página 3" loading="lazy">
+    <img src="resources/4.png" alt="Carta página 4" loading="lazy">
+    <img src="resources/5.png" alt="Carta página 5" loading="lazy">
+    <img src="resources/6.png" alt="Carta página 6" loading="lazy">
+    <img src="resources/7.png" alt="Carta página 7" loading="lazy">
+    <img src="resources/8.png" alt="Carta página 8" loading="lazy">
+    <a href="https://wa.me/56994934488?text=Hola,%20quisiera%20realizar%20un%20pedido"
+    id="whatsapp-button"
+    class="whatsapp-button"
+    target="_blank">
+    <img src="resources/whatsapp-logo.png" alt="Whatsapp logo" width="40px" height="40px" style="width: 30px; height: 30px;">
+   <span>Realizar pedido</span>
+ </a>
+  </div>
 </body>
 </html>
